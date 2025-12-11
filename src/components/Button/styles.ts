@@ -38,7 +38,7 @@ export const ButtonComponent = styled.button<ButtonComponentProps>`
   outline: none;
   border: none;
   padding: 0;
-  height: 70px;
+  height: 50px;
   width: 100%;
   background-color: ${({ $isRed, disabled }) =>
     generateButtonColor($isRed, disabled)};
