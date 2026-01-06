@@ -6,6 +6,11 @@ import ContactUs from "pages/EmployeeApp/ContactUs/ContactUs";
 import Home from "pages/EmployeeApp/Home/Home";
 import LogIn from "pages/EmployeeApp/LogIn/LogIn";
 import About from "pages/EmployeeApp/About/About";
+import Clients from "pages/EmployeeApp/Clients/Clients";
+import Apple from "pages/EmployeeApp/Clients/Apple/Apple";
+import Facebook from "pages/EmployeeApp/Clients/Facebook/Facebook";
+import Google from "pages/EmployeeApp/Clients/Google/Google";
+import { ROUTES } from "constants/routes";
 
 import GlobalStyles from "styles/GlobalStyles";
 
@@ -16,6 +21,7 @@ import Lesson_08 from "lessons/Lesson_08/Lesson_08";
 import Lesson_09 from "lessons/Lesson_09/Lesson_09";
 import Lesson_10 from "lessons/Lesson_10/Lesson_10";
 import Lesson_12 from "lessons/Lesson_12/Lesson_12";
+import Lesson_14 from "lessons/Lesson_14/Lesson_14";
 
 // Homeworks
 import Homework_06 from "homeworks/Homework_06/Homework_06";
@@ -29,15 +35,19 @@ function App() {
   return (
     <BrowserRouter>
       <GlobalStyles />
-      <Layout>
+      {/* <Layout>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/login" element={<LogIn />} />
-          <Route path="/contactUs" element={<ContactUs />} />
-          <Route path="*" element="Page Not Found" />
+          <Route path={ROUTES.HOME} element={<Home />} />
+          <Route path={ROUTES.ABOUT} element={<About />} />
+          <Route path={ROUTES.LOGIN} element={<LogIn />} />
+          <Route path={ROUTES.CONTACT_US} element={<ContactUs />} />
+          <Route path={ROUTES.CLIENTS} element={<Clients />} />
+          <Route path={ROUTES.APPLE} element={<Apple />} />
+          <Route path={ROUTES.GOOGLE} element={<Google />} />
+          <Route path={ROUTES.FACEBOOK} element={<Facebook />} />
+          <Route path={ROUTES.NOT_FOUND} element="Page Not Found" />
         </Routes>
-      </Layout>
+      </Layout> */}
       {/* <Lesson_06 /> */}
       {/* <Homework_06 /> */}
       {/* <Homework_07 /> */}
@@ -50,6 +60,7 @@ function App() {
       {/* <Homework_10 /> */}
       {/* <Lesson_12 /> */}
       {/* <Homework_12 /> */}
+      <Lesson_14 />
     </BrowserRouter>
   );
 }
